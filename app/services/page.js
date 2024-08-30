@@ -25,12 +25,6 @@ const Services = () => {
               </p>
             </li>
             <li>
-              <h2 className="text-xl font-semibold text-black">SEO</h2>
-              <p className="text-black">
-                Our SEO services improve your website's visibility on search engines, driving more traffic and increasing conversions.
-              </p>
-            </li>
-            <li>
               <h2 className="text-xl font-semibold text-black">Maintenance</h2>
               <p className="text-black">
                 We offer ongoing maintenance services to ensure your website remains up-to-date, secure, and running smoothly.

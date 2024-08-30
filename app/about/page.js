@@ -4,7 +4,7 @@ import logo from '/images/logo-no-brackets-mini.png'
 export default function About() {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-green-500 animate-gradient-x min-h-screen flex items-center justify-center">
-    <main className="flex min-h-screen flex-col items-center justify-between p-6">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="flex justify-center gap-5">
           <Image src={logo} alt="logo" className="w-48 h-48 transition-filter duration-300 hover:filter-drop-shadow-lg" />
