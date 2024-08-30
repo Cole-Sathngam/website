@@ -1,69 +1,45 @@
-'use client';
-
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import { sendEmail } from '/app/utils/send-email.ts';
-
 const Services = () => {
-  const { register, handleSubmit } = useForm();
-
-  function onSubmit(data) {
-    sendEmail(data);
-  }
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-green-500 p-4">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md overflow-y-auto max-h-screen">
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className='mb-5'>
-            <label
-              htmlFor='name'
-              className='mb-3 block text-base font-medium text-black'
-            >
-              Full Name
-            </label>
-            <input
-              type='text'
-              placeholder='Full Name'
-              className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-              {...register('name', { required: true })}
-            />
-          </div>
-          <div className='mb-5'>
-            <label
-              htmlFor='email'
-              className='mb-3 block text-base font-medium text-black'
-            >
-              Email Address
-            </label>
-            <input
-              type='email'
-              placeholder='example@domain.com'
-              className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-              {...register('email', { required: true })}
-            />
-          </div>
-          <div className='mb-5'>
-            <label
-              htmlFor='message'
-              className='mb-3 block text-base font-medium text-black'
-            >
-              Message
-            </label>
-            <textarea
-              rows={4}
-              placeholder='Type your message'
-              className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-              {...register('message', { required: true })}
-            ></textarea>
-          </div>
-          <div>
-            <button className='hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
-              Submit
-            </button>
-          </div>
-        </form>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-green-500 p-16">
+      <main className="flex flex-col items-center justify-center p-8 w-full max-w-4xl"> {/* Adjusted max-w to give more space */}
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl flex flex-col">
+        <h1 className="text-3xl font-bold mb-6 text-center text-black">Our Services</h1>
+        <div className="overflow-y-auto flex-grow">
+          <ul className="space-y-4 pr-4">
+            <li>
+              <h2 className="text-xl font-semibold text-black">Website Design</h2>
+              <p className="text-black">
+                We create visually appealing and user-friendly website designs that reflect your brand and engage your audience.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold text-black">Website Development</h2>
+              <p className="text-black">
+                Our development team builds robust and scalable websites using the latest technologies to ensure optimal performance.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold text-black">E-commerce Solutions</h2>
+              <p className="text-black">
+                We provide comprehensive e-commerce solutions to help you sell your products online and grow your business.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold text-black">SEO</h2>
+              <p className="text-black">
+                Our SEO services improve your website's visibility on search engines, driving more traffic and increasing conversions.
+              </p>
+            </li>
+            <li>
+              <h2 className="text-xl font-semibold text-black">Maintenance</h2>
+              <p className="text-black">
+                We offer ongoing maintenance services to ensure your website remains up-to-date, secure, and running smoothly.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
+      </main>
     </div>
   );
 };

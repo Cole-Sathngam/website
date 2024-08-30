@@ -1,6 +1,5 @@
 import Image from "next/image";
-import coleLogo from '/public/cole.png';
-import tannerLogo from '/public/tanner.png';
+import logo from '/images/logo-no-brackets-mini.png'
 
 export default function About() {
   return (
@@ -8,14 +7,13 @@ export default function About() {
     <main className="flex min-h-screen flex-col items-center justify-between p-6">
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="flex justify-center gap-5">
-          <Image src={coleLogo} alt="cole logo" className="w-48 h-48 rounded-full transition-filter duration-300 hover:filter-drop-shadow-lg" />
-          <Image src={tannerLogo} alt="tanner logo" className="w-48 h-48 rounded-full transition-filter duration-300 hover:filter-drop-shadow-lg" />
+          <Image src={logo} alt="logo" className="w-48 h-48 transition-filter duration-300 hover:filter-drop-shadow-lg" />
         </div>
         <h1 className="text-5xl mt-8">
           About Us
         </h1>
-        <p className="mt-10">
-          We are Cole and Tanner, two developers who love Next.js. We built this site to show off our skills and to help others learn how to use Next.js. We hope you enjoy it! 🚀
+        <p className="mt-10 text-center text-lg">
+  We are Cole and Tanner, two passionate web developers with a love for crafting beautiful, functional websites that help small businesses thrive. With a deep understanding of the challenges small companies face, we’re dedicated to creating tailored web solutions that not only look great but also deliver results. We believe that every business, no matter the size, deserves a strong online presence, and we’re here to make that happen. We take pride in our work, and there’s nothing we enjoy more than seeing our clients succeed with a website we’ve built. Let’s bring your vision to life, one pixel at a time.
         </p>
       </div>
     </main>

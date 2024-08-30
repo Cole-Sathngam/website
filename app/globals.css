@@ -24,6 +24,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  min-height: 100vh; /* Ensure the body covers the full height */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 @layer utilities {
@@ -49,4 +53,10 @@ body {
   background-size: 600% 600%;
   animation: gradientBackground 15s ease infinite;
   min-height: 100vh; /* Ensure the background covers the entire viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* New class to add extra scrollable space */
+.scroll-padding {
+  padding-bottom: 500px; /* Add extra space at the bottom to allow for scrolling */
 }
