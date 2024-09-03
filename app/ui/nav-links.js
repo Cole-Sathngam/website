@@ -8,7 +8,14 @@ import logo from '/images/logo-no-brackets-mini.png'
 export function Links() {
   const pathname = usePathname()
 
-  return (
+  // Define the paths where the navigation bar should be displayed
+  const pathsToShowNav = ['/', '/about', '/services']
+
+  // Check if the current pathname is in the array
+  const shouldShowNav = pathsToShowNav.includes(pathname)
+
+  // Conditionally render the navigation bar
+  return shouldShowNav ? (
     <nav className="bg-gray-800 p-4 fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-center items-center relative">
         <div className="absolute left-0 flex items-center">
@@ -35,5 +42,5 @@ export function Links() {
         </div>
       </div>
     </nav>
-  )
+  ) : null
 }

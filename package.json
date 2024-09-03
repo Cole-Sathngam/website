@@ -9,7 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@heroicons/react": "^2.1.5",
+    "@mui/icons-material": "^6.0.1",
+    "@mui/material": "^6.0.1",
     "@types/nodemailer": "^6.4.15",
+    "lucide-react": "^0.438.0",
     "next": "14.2.7",
     "nodemailer": "^6.9.14",
     "react": "^18",

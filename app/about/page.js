@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from '/images/logo-no-brackets-mini.png'
+import testDirect from '/images/testDirect.png'
 
 export default function About() {
   return (
@@ -15,6 +16,9 @@ export default function About() {
         <p className="mt-10 text-center text-lg">
   We are Cole and Tanner, two passionate web developers with a love for crafting beautiful, functional websites that help small businesses thrive. With a deep understanding of the challenges small companies face, we’re dedicated to creating tailored web solutions that not only look great but also deliver results. We believe that every business, no matter the size, deserves a strong online presence, and we’re here to make that happen. We take pride in our work, and there’s nothing we enjoy more than seeing our clients succeed with a website we’ve built. Let’s bring your vision to life, one pixel at a time.
         </p>
+      <h1 className="text-5xl mt-8 p-8">
+        Portfolio
+      </h1>
       </div>
     </main>
     </div>
